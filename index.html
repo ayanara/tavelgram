@@ -14,8 +14,85 @@
         rel="stylesheet">
     </head>
     <body>
-        <p>Bem-vindo ao Travelgram! Explore destinos incríveis e compartilhe
-            suas experiências de viagem.</p>
+        <header class="site-header">
+            <nav class="container navigation" aria-label="Menu principal">
+                <a href="#" class="logo" aria-label="Travelgram - início">
+                    <img src="assets/icons/Logo.svg" alt="">
+                </a>
 
-    </body>
-</html>
+                <ul class="primary-menu">
+                    <li>
+                        <a href="#" class="search-link" aria-label="Pesquisar">
+                            <img src="assets/icons/MagnifyingGlass.svg" alt="">
+                        </a>
+                    </li>
+                    <li><a href="#">Explorar</a></li>
+                    <li><a href="#">Minhas viagens</a></li>
+                    <li>
+                        <a href="#" class="profile-link" aria-label="Perfil de Isabela Torres">
+                            <span class="profile-avatar" aria-hidden="true">IT</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="profile-section" aria-labelledby="profile-name">
+                <div class="profile container">
+                    <div class="profile-intro">
+                        <div class="profile-avatar profile-avatar-large" role="img" aria-label="Isabela Torres">
+                            IT
+                        </div>
+                        <div class="profile-copy">
+                            <h1 id="profile-name">Isabela Torres</h1>
+                            <p class="profile-tagline">Amante de viagens, cultura e gastronomia. 🌎✈️</p>
+                            <p>
+                                Aqui compartilho as histórias registradas em cada clique, explorando
+                                cantinhos fascinantes do nosso planeta a partir da movimentada cidade
+                                de São Paulo. 📸
+                            </p>
+                        </div>
+                    </div>
+
+                    <ul class="profile-details" aria-label="Informações do perfil">
+                        <li>
+                            <img src="assets/icons/MapPin.svg" alt="">
+                            <span>São Paulo, Brazil</span>
+                        </li>
+                        <li>
+                            <img src="assets/icons/AirplaneTilt.svg" alt="">
+                            <span>37 países</span>
+                        </li>
+                        <li>
+                            <img src="assets/icons/Image.svg" alt="">
+                            <span>240 fotos</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="travel-gallery" aria-label="Galeria de viagens">
+                <img src="assets/image/Image 01.png" alt="Vista de um lago alpino a partir de um barco">
+                <img src="assets/image/Image 02.png" alt="Canal de Veneza ao entardecer">
+                <img src="assets/image/Image 03.png" alt="Ponte sobre o Grande Canal de Veneza">
+                <img src="assets/image/Image 06.png" alt="Restaurante à beira de um canal em Veneza">
+                <img src="assets/image/Image 05.png" alt="Vila costeira italiana com casas coloridas">
+                <img src="assets/image/Image 04.png" alt="Vila costeira com mar azul-turquesa">
+                <img src="assets/image/Image 07.png" alt="Ponte histórica sobre o rio Arno">
+                <img src="assets/image/Image 08.png" alt="Catedral de Florença">
+                <img src="assets/image/Image 12.png" alt="Rua estreita em uma vila italiana">
+                <img src="assets/image/Image 10.png" alt="Restaurante italiano com uma scooter estacionada">
+                <img src="assets/image/Image 09.png" alt="Pratos e taças em uma mesa de restaurante">
+                <img src="assets/image/Image 11.png" alt="Coliseu de Roma">
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>Travelgram © 2024</p>
+            <nav aria-label="Links legais">
+                <a href="#">Termos de uso</a>
+                <a href="#">Política de privacidade</a>
+            </nav>
+        </footer>
+     </body>

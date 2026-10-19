@@ -1,1 +1,279 @@
 @import url(global.css);
+
+.container {
+    width: min(100% - 48px, 1136px);
+    margin-inline: auto;
+}
+
+.site-header {
+    background-color: var(--surface-color);
+}
+
+.profile-section {
+    background-color: var(--surface-color);
+}
+
+.navigation {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+}
+
+.logo img {
+    display: block;
+    width: 144px;
+    height: auto;
+}
+
+.primary-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.primary-menu a {
+    color: var(--text-color-secondary);
+    text-decoration: none;
+}
+
+.primary-menu a:hover,
+.primary-menu a:focus-visible {
+    color: var(--text-color-primary);
+}
+
+.search-link {
+    display: flex;
+    align-items: center;
+}
+
+.search-link img {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.profile-link {
+    display: flex;
+    align-items: center;
+}
+
+.profile-avatar {
+    display: grid;
+    place-items: center;
+    flex: 0 0 auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #f7d4c8, #b2c6c0);
+    color: #493b38;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 24px;
+}
+
+.profile-intro {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    max-width: 640px;
+}
+
+.profile-avatar-large {
+    width: 160px;
+    height: 160px;
+    font-size: 24px;
+}
+
+.profile-copy {
+    max-width: 384px;
+}
+
+.profile-copy h1 {
+    margin-bottom: 8px;
+    color: var(--text-color-primary);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.profile-copy p {
+    font-size: 12px;
+    line-height: 1.75;
+}
+
+.profile-tagline {
+    margin-bottom: 0;
+}
+
+.profile-details {
+    display: grid;
+    gap: 12px;
+    min-width: 220px;
+    list-style: none;
+}
+
+.profile-details li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+}
+
+.profile-details img {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.travel-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    width: min(100%, 1280px);
+    margin-inline: auto;
+    padding: 24px;
+    background-color: var(--background-color);
+}
+
+.travel-gallery img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.site-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    width: min(100%, 1280px);
+    margin-inline: auto;
+    padding: 16px 24px;
+    background-color: var(--background-color);
+    font-size: 12px;
+}
+
+.site-footer nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.site-footer a {
+    color: var(--text-color-secondary);
+    text-decoration: none;
+}
+
+.site-footer a:hover,
+.site-footer a:focus-visible {
+    color: var(--text-color-primary);
+}
+
+@media (max-width: 700px) {
+    .container {
+        width: min(100% - 32px, 1136px);
+    }
+
+    .navigation {
+        min-height: 72px;
+    }
+
+    .logo img {
+        width: 128px;
+    }
+
+    .primary-menu {
+        gap: 16px;
+    }
+
+    .primary-menu li:nth-child(2) {
+        display: none;
+    }
+
+    .profile {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 24px 16px;
+    }
+
+    .profile-intro {
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .profile-avatar-large {
+        width: 72px;
+        height: 72px;
+        font-size: 16px;
+    }
+
+    .profile-copy h1 {
+        font-size: 24px;
+    }
+
+    .profile-details {
+        margin-left: 88px;
+    }
+
+    .travel-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .site-footer {
+        padding: 20px 16px;
+    }
+}
+
+@media (max-width: 420px) {
+    .container {
+        width: 100%;
+    }
+
+    .navigation {
+        padding-inline: 16px;
+    }
+
+    .primary-menu {
+        gap: 12px;
+    }
+
+    .primary-menu li:nth-child(3) {
+        display: none;
+    }
+
+    .profile-intro {
+        flex-direction: column;
+    }
+
+    .profile-details {
+        margin-left: 0;
+    }
+
+    .site-footer {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+        padding-inline: 16px;
+    }
+
+    .site-footer nav {
+        gap: 16px;
+    }
+}
